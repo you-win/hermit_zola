@@ -195,10 +195,10 @@ table {
 #site-header {
   position: fixed;
   z-index: 1;
-  bottom: 0;
+  top: 0;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: -1px -2px 3px rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.45);
   background-color: $dark-grey;
 }
 
@@ -255,13 +255,13 @@ table {
 
 #mobile-menu {
   position: fixed;
-  bottom: 4.8em;
+  top: 4.8em;
   right: 1.5em;
   display: none;
   padding: 0.6em 1.8em;
   z-index: 1;
   box-sizing: border-box;
-  box-shadow: -1px -2px 3px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.45);
   background-color: $dark-grey;
 
   ul {
@@ -608,12 +608,12 @@ hr.post-end {
 .toc-title {
   margin-left: 1em;
   margin-bottom: 0.5em;
-  font-size: 0.8em;
+  font-size: 1.0em;
   font-weight: bold;
 }
 
 #TableOfContents {
-  font-size: 0.8em;
+  font-size: 1.0em;
   @include dimmed;
 
   ul {
