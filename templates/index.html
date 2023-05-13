@@ -105,7 +105,12 @@
       const blurbs = blurbsString.substring(1, blurbsString.length - 1).split(",").map((v) => {
         return v.trim();
       });
-      subtitle.textContent = blurbs[Math.floor(Math.random() * blurbs.length)];
+      const setText = () => {
+        subtitle.textContent = blurbs[Math.floor(Math.random() * blurbs.length)];
+      }
+      setText();
+      subtitle.onclick = setText;
+      subtitle.onmouseenter = setText;
     }
   </script>
 
